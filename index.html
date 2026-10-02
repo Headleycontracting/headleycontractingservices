@@ -53,36 +53,40 @@
         property="og:image"
         content="https://headleycontractingservices.com/hero-bg.png"
     >
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "Headley Contracting Services",
-  "url": "https://headleycontractingservices.com/",
-  "telephone": "+1-330-303-0904",
-  "email": "headleycontracting@gmail.com",
-  "areaServed": [
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
     {
-      "@type": "AdministrativeArea",
-      "name": "Northeast Ohio"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Western Pennsylvania"
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Headley Contracting Services",
+      "url": "https://headleycontractingservices.com/",
+      "telephone": "+1-330-303-0904",
+      "email": "headleycontracting@gmail.com",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Northeast Ohio"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Western Pennsylvania"
+        }
+      ],
+      "description": "Headley Contracting Services provides interior and exterior remodeling, new construction, additions, and septic system installation throughout Northeast Ohio and Western Pennsylvania.",
+      "knowsAbout": [
+        "Interior Remodeling",
+        "Exterior Remodeling",
+        "New Construction",
+        "Additions",
+        "Septic System Installation"
+      ]
     }
-  ],
-  "description": "Headley Contracting Services provides interior and exterior remodeling, new construction, additions, and septic system installation throughout Northeast Ohio and Western Pennsylvania.",
-  "knowsAbout": [
-    "Interior Remodeling",
-    "Exterior Remodeling",
-    "New Construction",
-    "Additions",
-    "Septic System Installation"
-  ]
-}
-</script>
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
@@ -109,6 +113,8 @@
 
                 <a href="#services">Services</a>
 
+                <a href="#gallery">Recent Work</a>
+
                 <a href="#about">About</a>
 
                 <a href="#process">How It Works</a>
@@ -130,7 +136,6 @@
 
         <!-- =================================================
              HERO
-             Background image comes from hero-bg.png in CSS
              ================================================= -->
 
         <section class="hero" id="home">
@@ -337,82 +342,87 @@
 
         </section>
 
-<!-- =================================================
-     RECENT WORK / GALLERY
-     ================================================= -->
 
-<section class="gallery-section" id="gallery">
 
-    <div class="container">
+        <!-- =================================================
+             RECENT WORK / GALLERY
+             ================================================= -->
 
-        <p class="eyebrow">
-            Recent Work
-        </p>
+        <section class="gallery-section" id="gallery">
 
-        <h2>
-            Our Projects
-        </h2>
+            <div class="container">
 
-        <p class="section-intro">
-            Take a look at some of our recent remodeling, construction,
-            and property improvement projects.
-        </p>
+                <p class="eyebrow">
+                    Recent Work
+                </p>
 
-        <div class="gallery-grid">
+                <h2>
+                    Our Projects
+                </h2>
 
-            <div class="gallery-item">
-                <img
-                    src="project-1.jpg"
-                    alt="Headley Contracting completed project"
-                    loading="lazy"
-                >
+                <p class="section-intro">
+                    Take a look at some of our recent remodeling, construction,
+                    and property improvement projects.
+                </p>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+                        <img
+                            src="project-1.jpg"
+                            alt="Headley Contracting completed remodeling project"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="project-2.jpg"
+                            alt="Headley Contracting residential construction project"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="project-3.jpg"
+                            alt="Headley Contracting home improvement project"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="project-4.jpg"
+                            alt="Headley Contracting completed residential project"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="project-5.jpg"
+                            alt="Headley Contracting construction work"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="project-6.jpg"
+                            alt="Headley Contracting recent project"
+                            loading="lazy"
+                        >
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="gallery-item">
-                <img
-                    src="project-2.jpg"
-                    alt="Headley Contracting remodeling project"
-                    loading="lazy"
-                >
-            </div>
+        </section>
 
-            <div class="gallery-item">
-                <img
-                    src="project-3.jpg"
-                    alt="Headley Contracting construction project"
-                    loading="lazy"
-                >
-            </div>
 
-            <div class="gallery-item">
-                <img
-                    src="project-4.jpg"
-                    alt="Headley Contracting completed construction work"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="gallery-item">
-                <img
-                    src="project-5.jpg"
-                    alt="Headley Contracting residential project"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="gallery-item">
-                <img
-                    src="project-6.jpg"
-                    alt="Headley Contracting recent project"
-                    loading="lazy"
-                >
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
         <!-- =================================================
              ABOUT
@@ -726,7 +736,6 @@
 
         </section>
 
-
     </main>
 
 
@@ -751,7 +760,6 @@
         </div>
 
     </footer>
-
 
 
     <script src="script.js"></script>
