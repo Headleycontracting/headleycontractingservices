@@ -67,24 +67,16 @@ a {
 
 /* ---------- LOGO ---------- */
 
-.logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
 .logo-link img,
 img.logo,
 .logo {
     display: block !important;
-    width: 175px !important;
-    max-width: 175px !important;
-    height: 70px !important;
-    max-height: 70px !important;
+    width: 190px !important;
+    max-width: 190px !important;
+    height: 76px !important;
+    max-height: 76px !important;
     object-fit: contain !important;
 }
-
 
 /* ---------- NAVIGATION ---------- */
 
