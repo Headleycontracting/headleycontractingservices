@@ -40,9 +40,12 @@ a {
 }
 
 .brand {
-  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.05rem;
   font-weight: 800;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 nav {
@@ -61,12 +64,15 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 640px;
+  min-height: 680px;
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(17, 24, 39, 0.82), rgba(17, 24, 39, 0.82)),
-    linear-gradient(135deg, #475569, #111827);
+    linear-gradient(
+      rgba(10, 16, 26, 0.62),
+      rgba(10, 16, 26, 0.72)
+    ),
+    url("hero-bg.png") center center / cover no-repeat;
   color: white;
 }
 
@@ -116,7 +122,9 @@ nav a:hover {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 800;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
 }
 
 .button:hover {
@@ -255,41 +263,5 @@ nav a:hover {
 
   .contact-actions {
     margin-top: 0;
-  }
-}
-
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-}
-
-.brand img {
-  display: block;
-  width: min(420px, 52vw);
-  max-height: 54px;
-  object-fit: contain;
-  object-position: left center;
-}
-
-.hero-logo {
-  display: block;
-  width: min(700px, 92%);
-  max-height: 190px;
-  object-fit: contain;
-  object-position: left center;
-  margin: 0 0 30px;
-}
-
-@media (max-width: 760px) {
-  .brand img {
-    width: min(320px, 78vw);
-    max-height: 46px;
-  }
-
-  .hero-logo {
-    width: 100%;
-    max-height: 150px;
-    margin-bottom: 22px;
   }
 }
