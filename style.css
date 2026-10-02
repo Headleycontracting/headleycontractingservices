@@ -112,8 +112,11 @@ img.logo,
    HERO
    ========================================================= */
 
+/* =========================================================
+   HERO
+   ========================================================= */
+
 .hero {
-    .hero {
     position: relative;
     min-height: 560px;
 
@@ -138,6 +141,35 @@ img.logo,
     background-repeat: no-repeat;
 }
 
+.hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 950px;
+}
+
+.hero .eyebrow {
+    color: #ffffff;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 0 auto 22px;
+    font-size: clamp(2.2rem, 4.2vw, 3.8rem);
+    line-height: 1.08;
+    color: #ffffff;
+}
+
+.hero-text {
+    max-width: 780px;
+    margin: 0 auto 32px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f2f2f2;
+}
+
+.hero-buttons .btn {
+    min-width: 220px;
+}
 /* =========================================================
    TRUST BAR
    ========================================================= */
@@ -441,13 +473,15 @@ img.logo,
     }
 
     .logo-link img,
-    img.logo,
-    .logo {
-        width: 160px !important;
-        max-width: 160px !important;
-        height: 62px !important;
-        max-height: 62px !important;
-    }
+img.logo,
+.logo {
+    display: block !important;
+    width: 190px !important;
+    max-width: 190px !important;
+    height: 76px !important;
+    max-height: 76px !important;
+    object-fit: contain !important;
+}
 
     .main-nav {
         flex-wrap: wrap;
