@@ -268,4 +268,17 @@ nav a:hover {
   .contact-actions {
     margin-top: 0;
   }
+  .site-header .container {
+  width: calc(100% - 40px);
+  max-width: none;
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
 }
